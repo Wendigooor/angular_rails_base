@@ -5,10 +5,9 @@ Example of Ruby on Rails (backend/api) + AngularJS base application for easy sta
 Exist model Product (which user can create/edit/remove) and Comments (which related to Product)
 
 === Files
-<b>JS files</b> (angular app part) located in <b>app/assets/javascripts</b>
+<b>JS files</b> (angular app part) located in - {app/assets/javascripts}[https://github.com/Wendigooor/angular_rails_base/tree/master/app/assets/javascripts]
 
-<b>Views/partials</b> located in - <b>public/app/views</b>
-
+<b>Views/partials</b> located in - {public/app/views}[https://github.com/Wendigooor/angular_rails_base/tree/master/public/app/views/products]
 -----
 == You can check it on
 https://aa-test-wendigooor.herokuapp.com/
