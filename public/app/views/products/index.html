@@ -1,0 +1,17 @@
+
+Products index
+
+<br>
+<button class="btn btn-primary" ui-sref="products.new">New</button>
+<br>
+<br>
+
+<p ng-repeat="product in products | orderBy:'id'" class="row">
+	<span class="col-md-4">
+		{{$index + 1}}. {{product.name}} (price: {{product.price}})
+	</span>
+	<button class="btn btn-primary" ui-sref="products.show({id: product.id})">Show</button>
+	<button class="btn btn-warning" ui-sref="products.edit({id: product.id})">Edit</button>
+	<button class="btn btn-danger" ng-click="remove(product.id)">Destroy</button>
+	<br>
+</p>

@@ -1,0 +1,28 @@
+Product show page
+
+<br>
+<b>Name:</b>
+<p>{{product.name}}</p>
+<br>
+<b>Description:</b>
+<p>{{product.desctiption}}</p>
+<br>
+<b>Price:</b>
+<p>{{product.price}}</p>
+
+<br>
+
+Comments:
+<p ng-repeat="comment in comments">
+	{{$index + 1}}. {{comment.created_at | date:'yyyy-MM-dd HH:mm:ss'}} - {{comment.body}}
+	<br>
+</p>
+<br>
+<input ng-model="comment.body"/>
+<button class="btn btn-primary" ng-click="addComment()" ng-disabled="!comment.body">Add comment</button>
+
+<br>
+<br>
+<button class="btn btn-primary" ui-sref="products.edit({id: product.id})">Edit</button>
+<br>
+<button class="btn btn-primary" ui-sref="products.list">Go to all products</button>

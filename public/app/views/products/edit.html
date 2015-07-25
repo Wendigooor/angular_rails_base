@@ -1,0 +1,16 @@
+
+Edit product:
+<br>
+<input class="form-control" ng-model="product.name" placeholder="Name"/>
+<br>
+<input class="form-control" ng-model="product.description" placeholder="Description"/>
+<br>
+<input class="form-control" ng-model="product.price" placeholder="Price"/>
+<br>
+<button class="btn btn-primary" ng-click="updateProduct()">Update</button>
+
+<br>
+<br>
+<button class="btn btn-primary" ui-sref="products.show({id: product.id})">Show</button>
+<br>
+<button class="btn btn-primary" ui-sref="products.list">Go to all products</button>
