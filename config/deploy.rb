@@ -4,6 +4,8 @@ lock '3.1.0'
 set :application, 'angular_rails_base'
 set :repo_url, 'git@github.com:Wendigooor/angular_rails_base.git'
 
+set :deploy_to, '/home/deploy/angular_rails_base'
+
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
@@ -33,6 +35,10 @@ set :repo_url, 'git@github.com:Wendigooor/angular_rails_base.git'
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+# set :linked_files, %w{config/database.yml}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
 
 namespace :deploy do
 

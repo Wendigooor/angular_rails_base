@@ -18,6 +18,8 @@ role :db,  %w{root@188.226.134.143}
 
 set :stage, :production
 
+
+
 server '188.226.134.143', user: 'root', roles: %w{web app}
 
 # you can set custom ssh options
